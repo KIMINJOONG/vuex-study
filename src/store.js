@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    // data
     allUsers: [
       {
         userId: "hoza123",
@@ -28,6 +29,12 @@ export default new Vuex.Store({
         src: "https://goo.gl/x7SpCD"
       }
     ]
+  },
+  getters: {
+    // computed
+    allUsersCount: state => {
+      return state.allUsers.length;
+    }
   },
   mutations: {},
   actions: {}
