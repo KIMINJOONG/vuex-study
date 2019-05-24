@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { EventBus } from "@/main.js";
+//import { EventBus } from "@/main.js";
 import { mapState, mapGetters } from "vuex";
 
 export default {
@@ -35,9 +35,9 @@ export default {
     //...mapGetters(["allUsersCount", "countOfSeoul", "percentOfSeoul"])
   },
   mounted() {
-    EventBus.$on("signUp", users => {
-      this.$store.state.allUsers.push(users);
-    });
+    //EventBus.$on("signUp", users => {
+    //  this.$store.state.allUsers.push(users);
+    //});
   }
 };
 </script>
