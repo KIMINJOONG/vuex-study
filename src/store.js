@@ -51,5 +51,14 @@ export default new Vuex.Store({
       state.allUsers.push(payload);
     }
   },
-  actions: {}
+  actions: {
+    // state를 변화시키는건 mutation
+    // state를 변화시키기 위한 로직부분 비동기, 유효성, api호출 등등
+    addUsers: ({ commit }, payload) => {
+      // context, payload
+      // { commit }, payload
+      // context를 붙이지않게하기위해 저런방식으로 씀
+      commit("addUsers", payload);
+    }
+  }
 });
